@@ -5,9 +5,9 @@ from . import home
 
 @home.route("/register/", methods=["GET", "POST"])
 def register():
-    pass
+    return "<h1>register</h1>"
 
 
 @home.route("/login/", methods=['GET', 'POST'])
 def login():
-    pass
+    return "login"
