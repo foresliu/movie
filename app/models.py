@@ -3,6 +3,7 @@
 from datetime import datetime
 from . import db
 
+
 class User(db.Model):
     __tablename__ = 'user'      # 定义用户表在数据库中的名称
     id = db.Column(db.Integer, primary_key=True)    # 用户编号
@@ -27,6 +28,7 @@ class User(db.Model):
         from werkzeug.security import check_password_hash
         return check_password_hash(self.pwd,pwd)
 
+
 # 会员登录日志
 class Userlog(db.Model):
     __tablename__ = 'userlog'        # 定义用户日志表在数据库中的名称
@@ -38,16 +40,6 @@ class Userlog(db.Model):
     def __repr__(self):
         return "<Userlog %r>" % self.id
 
-# 电影标签
-class Tag(db.Model):
-    __tablename__ = 'tag'              # 定义电影标签表在数据库中的名称
-    id = db.Column(db.Integer, primary_key=True)  # 电影编号
-    name = db.Column(db.String(100), unique=True)  # 标题
-    addtime = db.Column(db.DateTime, index=True, default=datetime.now)  # 电影添加时间
-    movies = db.relationship("Movie", backref='tag')  # 电影外键的键值
-
-    def __repr__(self):
-        return "<Tag %r>" % self.name
 
 # 电影标签
 class Tag(db.Model):
@@ -59,6 +51,29 @@ class Tag(db.Model):
 
     def __repr__(self):
         return "<Tag %r>" % self.name
+
+# 电影
+class Movie(db.Model):
+    __tablename__ = 'movie'  # 定义电影表在数据库中的名称
+    id = db.Column(db.Integer, primary_key=True)  # 编号
+    title = db.Column(db.String(255), unique=True)  # 标题
+    url = db.Column(db.String(255), unique=True)  # 地址
+    info = db.Column(db.Text)  # 简介
+    logo = db.Column(db.String(255), unique=True)  # 封面
+    star = db.Column(db.SmallInteger)  # 星级
+    playnum = db.Column(db.BigInteger)  # 播放量
+    commentnum = db.Column(db.BigInteger)  # 评论量
+    tag_id = db.Column(db.Integer, db.ForeignKey('tag.id'))  # 所属标签
+    area = db.Column(db.String(255))  # 上映地区
+    release_time = db.Column(db.Date)  # 上映时间
+    length = db.Column(db.String(100))  # 播放时间
+    addtime = db.Column(db.DateTime, index=True, default=datetime.now)  # 添加时间
+    comments = db.relationship('Comment', backref='movie')  # 评论外键关系关联
+    moviecols = db.relationship('Moviecol', backref='movie')  # 收藏外键关系关联
+
+    def __repr__(self):
+        return "<Movie %r>" % self.title
+
 
 # 上映预告
 class Preview(db.Model):
@@ -70,6 +85,7 @@ class Preview(db.Model):
 
     def __repr__(self):
         return "<Preview %r>" % self.title
+
 
 # 电影评论
 class Comment(db.Model):
@@ -83,6 +99,7 @@ class Comment(db.Model):
     def __repr__(self):
         return '<Comment %r>' % self.id
 
+
 # 电影收藏
 class Moviecol(db.Model):
     __tablename__ = 'moviecol'              # 定义电影收藏表在数据库中的名称
@@ -93,6 +110,7 @@ class Moviecol(db.Model):
 
     def __repr__(self):
         return "<Moviecol %r>" % self.id
+
 
 # 权限
 class Auth(db.Model):
@@ -118,6 +136,7 @@ class Role(db.Model):
     def __repr__(self):
         return "<Role %r>" % self.name
 
+
 # 管理员
 class Admin(db.Model):
     __tablename__ = 'admin'              # 定义管理员表在数据库中的名称
@@ -136,6 +155,7 @@ class Admin(db.Model):
     def check_pwd(self, pwd):
         from werkzeug.security import check_password_hash
         return check_password_hash(self.pwd, pwd)
+
 
 # 管理员登录日志
 class Adminlog(db.Model):

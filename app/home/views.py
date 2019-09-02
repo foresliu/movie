@@ -1,6 +1,7 @@
 # -*- coding:utf-8 -*-
 
 from . import home
+from app import db,models
 
 
 @home.route("/register/", methods=["GET", "POST"])

@@ -1,6 +1,7 @@
 # -*- coding:utf-8 -*-
 
 from . import admin
+from app import db,models
 
 
 @admin.route('/')
