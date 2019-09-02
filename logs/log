@@ -2,64 +2,15 @@ INFO _internal.py:122  * Restarting with stat
 WARNING _internal.py:122  * Debugger is active!
 INFO _internal.py:122  * Debugger PIN: 290-631-006
 INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:38:42] "GET / HTTP/1.1" 404 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:38:43] "GET /favicon.ico HTTP/1.1" 404 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:38:52] "GET /admin HTTP/1.1" 308 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:38:52] "GET /admin/ HTTP/1.1" 500 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:38:52] "GET /admin/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:38:52] "GET /admin/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:38:52] "GET /admin/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:38:52] "GET /admin/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:38:52] "GET /admin/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:38:52] "GET /admin/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:40:08] "GET /login HTTP/1.1" 308 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:40:08] "GET /login/ HTTP/1.1" 500 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:40:08] "GET /login/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:40:08] "GET /login/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:40:08] "GET /login/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:40:08] "GET /login/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:40:08] "GET /login/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:40:08] "GET /login/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:41:42] "GET / HTTP/1.1" 404 -
+INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 13:51:02] "GET /register HTTP/1.1" 308 -
+INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 13:51:03] "GET /register/ HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'E:\\flask\xcf\xee\xc4\xbf\xc4\xbf\xc2\xbc\\movie\\app\\home\\views.py', reloading
 INFO _internal.py:122  * Restarting with stat
 WARNING _internal.py:122  * Debugger is active!
 INFO _internal.py:122  * Debugger PIN: 290-631-006
 INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-INFO _internal.py:122  * Detected change in 'E:\\flask\xcf\xee\xc4\xbf\xc4\xbf\xc2\xbc\\movie\\app\\home\\__init__.py', reloading
+INFO _internal.py:122  * Detected change in 'E:\\flask\xcf\xee\xc4\xbf\xc4\xbf\xc2\xbc\\movie\\app\\home\\views.py', reloading
 INFO _internal.py:122  * Restarting with stat
 WARNING _internal.py:122  * Debugger is active!
 INFO _internal.py:122  * Debugger PIN: 290-631-006
 INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-INFO _internal.py:122  * Detected change in 'E:\\flask\xcf\xee\xc4\xbf\xc4\xbf\xc2\xbc\\movie\\app\\admin\\views.py', reloading
-INFO _internal.py:122  * Restarting with stat
-WARNING _internal.py:122  * Debugger is active!
-INFO _internal.py:122  * Debugger PIN: 290-631-006
-INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:46:06] "GET / HTTP/1.1" 404 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:46:14] "GET /admin/ HTTP/1.1" 500 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:46:14] "GET /admin/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:46:14] "GET /admin/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:46:14] "GET /admin/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:46:14] "GET /admin/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:46:14] "GET /admin/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:46:24] "GET /admin/ HTTP/1.1" 500 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:46:24] "GET /admin/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:46:24] "GET /admin/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:46:24] "GET /admin/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:46:24] "GET /admin/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:46:24] "GET /admin/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:47:17] "GET /admin/login HTTP/1.1" 308 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:47:17] "GET /admin/login/ HTTP/1.1" 500 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:47:17] "GET /admin/login/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:47:17] "GET /admin/login/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:47:17] "GET /admin/login/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:47:17] "GET /admin/login/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:47:17] "GET /admin/login/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:47:17] "GET /admin/login/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:49:02] "GET / HTTP/1.1" 404 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:51:18] "GET /login/ HTTP/1.1" 500 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:51:18] "GET /login/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:51:18] "GET /login/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:51:18] "GET /login/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:51:18] "GET /login/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
-INFO _internal.py:122 127.0.0.1 - - [02/Sep/2019 11:51:18] "GET /login/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
